@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact From JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="contact-wrapper">
+        <h1>Contact Us</h1>
+        <p>
+          Got a project or idea? Our team is here to make it a reality. If you
+          are aiming to boost your coding skills or seek hands-on experience,
+          join us. Share your aspirations below, and let's craft the code of
+          tomorrow.
+        </p>
+        <form class="contact-form">
+          <div class="alert hide-alert">
+            <p class="alert-message"></p>
+          </div>
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" required />
+          </div>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea rows="10" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
